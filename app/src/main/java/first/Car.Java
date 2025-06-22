@@ -1,6 +1,8 @@
 package first;
 
+@Component
 public class Car {
+    @Autowired
     private Engine engine;
 
     public Car(Engine engine) {

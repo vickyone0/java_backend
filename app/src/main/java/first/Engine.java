@@ -1,9 +1,12 @@
 package first;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Engine {
     private String type;
 
-    public Engine(String type) {
+    public Engine(@Value("${engine.type}")String type) {
         this.type = type;
     }
 
